@@ -228,6 +228,9 @@ enum {
   F22KEY = 0x0141, /* 321 */
   F23KEY = 0x0142, /* 322 */
   F24KEY = 0x0143, /* 323 */
+  UDIAERESIS = 0X144, /* 324 */
+  ODIAERESIS = 0X145, /* 325 */
+  ADIAERESIS = 0X146, /* 326 */
 
   /* *** End of keyboard codes. *** */
 
@@ -352,7 +355,7 @@ enum {
 /* test whether the event is a key on the keyboard */
 #define ISKEYBOARD(event_type) \
   (((event_type) >= 0x0020 && (event_type) <= 0x00ff) || \
-   ((event_type) >= 0x012c && (event_type) <= 0x0143))
+   ((event_type) >= 0x012c && (event_type) <= 0x0146))
 
 /* test whether the event is a modifier key */
 #define ISKEYMODIFIER(event_type) \
