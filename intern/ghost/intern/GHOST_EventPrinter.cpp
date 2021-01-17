@@ -318,6 +318,15 @@ void GHOST_EventPrinter::getKeyString(GHOST_TKey key, char str[32]) const
       case GHOST_kKeyMediaLast:
         tstr = "MediaLast";
         break;
+      case GHOST_kKeyUdiaeresis:
+        tstr = "UDIAERESIS";
+        break;
+      case GHOST_kKeyOdiaeresis:
+        tstr = "ODIAERESIS";
+        break;
+      case GHOST_kKeyAdiaeresis:
+        tstr = "ADIAERESIS";
+        break;
       default:
         tstr = "unknown";
         break;

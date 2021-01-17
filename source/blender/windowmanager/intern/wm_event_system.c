@@ -4103,6 +4103,13 @@ static int convert_key(GHOST_TKey key)
     case GHOST_kKeyMediaLast:
       return EVT_MEDIALAST;
 
+    case GHOST_kKeyUdiaeresis:
+      return EVT_UDIAERESIS;
+    case GHOST_kKeyOdiaeresis:
+      return EVT_ODIAERESIS;
+    case GHOST_kKeyAdiaeresis:
+      return EVT_ADIAERESIS;
+
     default:
       return EVT_UNKNOWNKEY; /* GHOST_kKeyUnknown */
   }
