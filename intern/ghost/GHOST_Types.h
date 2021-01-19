@@ -405,7 +405,11 @@ typedef enum {
   GHOST_kKeyMediaPlay,
   GHOST_kKeyMediaStop,
   GHOST_kKeyMediaFirst,
-  GHOST_kKeyMediaLast
+  GHOST_kKeyMediaLast,
+
+  GHOST_kKeyUdiaeresis,
+  GHOST_kKeyOdiaeresis,
+  GHOST_kKeyAdiaeresis
 } GHOST_TKey;
 
 typedef enum {

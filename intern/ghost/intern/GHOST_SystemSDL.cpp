@@ -282,6 +282,10 @@ static GHOST_TKey convertSDLKey(SDL_Scancode key)
       // GXMAP(type,XF86XK_AudioRewind,       GHOST_kKeyMediaFirst);
       GXMAP(type, SDL_SCANCODE_AUDIONEXT, GHOST_kKeyMediaLast);
 
+      GXMAP(type, SDL_SCANCODE_UDIAERESIS, GHOST_kKeyUdiaeresis);
+      GXMAP(type, SDL_SCANCODE_ODIAERESIS, GHOST_kKeyOdiaeresis);
+      GXMAP(type, SDL_SCANCODE_ADIAERESIS, GHOST_kKeyAdiaeresis);
+
       default:
         printf("Unknown\n");
         type = GHOST_kKeyUnknown;

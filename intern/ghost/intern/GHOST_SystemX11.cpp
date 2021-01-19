@@ -1846,6 +1846,10 @@ static GHOST_TKey ghost_key_from_keysym(const KeySym key)
       GXMAP(type, XK_Num_Lock, GHOST_kKeyNumLock);
       GXMAP(type, XK_Menu, GHOST_kKeyApp);
 
+      GXMAP(type, XK_udiaeresis, GHOST_kKeyUdiaeresis);
+      GXMAP(type, XK_odiaeresis, GHOST_kKeyOdiaeresis);
+      GXMAP(type, XK_adiaeresis, GHOST_kKeyAdiaeresis);
+
       /* keypad events */
 
       GXMAP(type, XK_KP_0, GHOST_kKeyNumpad0);
@@ -1877,6 +1881,7 @@ static GHOST_TKey ghost_key_from_keysym(const KeySym key)
       GXMAP(type, XK_KP_Subtract, GHOST_kKeyNumpadMinus);
       GXMAP(type, XK_KP_Multiply, GHOST_kKeyNumpadAsterisk);
       GXMAP(type, XK_KP_Divide, GHOST_kKeyNumpadSlash);
+
 
       /* Media keys in some keyboards and laptops with XFree86/Xorg */
 #ifdef WITH_XF86KEYSYM

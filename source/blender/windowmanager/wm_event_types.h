@@ -234,6 +234,10 @@ enum {
   EVT_F23KEY = 0x0142, /* 322 */
   EVT_F24KEY = 0x0143, /* 323 */
 
+  EVT_UDIAERESIS = 0X144, /* 324 */
+  EVT_ODIAERESIS = 0X145, /* 325 */
+  EVT_ADIAERESIS = 0X146, /* 326 */
+
   /* *** End of keyboard codes. *** */
 
   /* NDOF (from SpaceNavigator & friends)
@@ -358,7 +362,7 @@ enum {
 /* test whether the event is a key on the keyboard */
 #define ISKEYBOARD(event_type) \
   (((event_type) >= 0x0020 && (event_type) <= 0x00ff) || \
-   ((event_type) >= 0x012c && (event_type) <= 0x0143))
+   ((event_type) >= 0x012c && (event_type) <= 0x0146))
 
 /* test whether the event is a modifier key */
 #define ISKEYMODIFIER(event_type) \
